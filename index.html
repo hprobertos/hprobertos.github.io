@@ -1,12 +1,21 @@
-<!DOCTYPE html>
 <!--
   Portafolio
   Fecha de creación: 5/May/2019
-  Fecha de modificación: 6/May/2019
+  Fecha de modificación: 1/Ene/2020
 
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Template utilizado para este portafolio: 
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!DOCTYPE html>
+<script type="text/javascript">
+  // Put this at the top of index page
+    var language = "esp";
+    if (localStorage.getItem("lang") == "eng") {
+      language = "eng";
+    }
+</script>
+
 <html>
   <head>
     <title>Portafolio</title>
@@ -29,9 +38,7 @@
         <p></p>
         <ul class="actions">
           <li>
-            <a href="#header" class="button icon solo fa-arrow-down scrolly"
-              >Continue</a
-            >
+            <a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a>
           </li>
         </ul>
       </div>
@@ -47,6 +54,13 @@
           <li class="active"><a>Portafolio</a></li>
         </ul>
         <ul class="icons">
+          <li>
+            <a
+              href="javascript:changeLang()"
+              class="icon fa-language"
+              ><span class="label">Language</span></a
+            >
+          </li>
           <li>
             <a
               href="https://github.com/hprobertos"
@@ -78,26 +92,106 @@
             <a class="image main"><img src="images/kard2.jpg" alt=""/></a>
             <h3>Estudios</h3>
             <h4>Preparatoria:</h4>
-            <h5>Cetis #58</h5>
+            <h5>Cetis #58 con especialidad en Electrónica</h5>
+
             <h4>Universidad:</h4>
             <h5>Ingeniería en Computación, UABC, Tijuana</h5>
-            <br />
+            <br/>
 
             <h3>Conocimientos de Programación</h3>
             <h4>Experiencia con los lenguajes:</h4>
-            <h5>
-              C, C++, C#, Java, JavaScript, HTML,CSS, PHP, Python, Latex,
-              Ensamblador.
-            </h5>
+
+            <div class="container">
+              <a class="image">
+                <img src="images/icons/c.png" alt="Avatar" class="image" height="64" width="64" title="C">
+              </a>
+              <a class="image">
+                <img src="images/icons/java.png" alt="Avatar" class="image" height="64" width="64" title="Java">
+              </a>
+              <a class="image">
+                <img src="images/icons/js.png" alt="Avatar" class="image" height="64" width="64" title="Javascript">
+              </a>
+              <a class="image">
+                <img src="images/icons/php.png" alt="Avatar" class="image" height="64" width="64" title="PHP">
+              </a> 
+              <a class="image">
+                <img src="images/icons/python.png" alt="Avatar" class="image" height="64" width="64" title="Python">
+              </a>              
+              
+              
+
+            </div>
+            <br>
+
             <h4>Experiencia con herramientas:</h4>
-            <h5>AngularJS, MongoDB, NodeJS, JSON.</h5>
-            <h4>Otras herramientas:</h4>
-            <h5>Packet Tracer, Unity, Android Studio, TexMaker</h5>
-            <br />
+              <div class="container">
+                <a class="image">
+                  <img src="images/icons/mysql.png" alt="Avatar" class="image" height="64" width="64" title="MySQL">
+                </a>    
+                <a class="image">
+                  <img src="images/icons/bit.png" alt="Avatar" class="image" height="64" width="64" title="BitBucket">
+                </a>                 
+                <a class="image">
+                  <img src="images/icons/angular.png" alt="Avatar" class="image" height="64" width="64" title="Angular">
+                </a> 
+                <a class="image">
+                  <img src="images/icons/fire.png" alt="Avatar" class="image" height="64" width="64" title="Firestore">
+                </a>  
+                <a class="image">
+                  <img src="images/icons/ci.png" alt="Avatar" class="image" height="64" width="64" title="CodeIgniter">
+                </a>  
+                <a class="image">
+                  <img src="images/icons/bs.png" alt="Avatar" class="image" height="64" width="64" title="Bootstrap">
+                </a>
+              </div>
+            <br>
+
+            <h4>Conocimiento medio de otros lenguajes:</h4>
+              <div class="container">
+                <a class="image">
+                  <img src="images/icons/cpp.png" alt="Avatar" class="image" height="64" width="64" title="C++">
+                </a>  
+                <a class="image">
+                  <img src="images/icons/csharp.png" alt="Avatar" class="image" height="64" width="64" title="C#">
+                </a>  
+                <a class="image">
+                  <img src="images/icons/ts.png" alt="Avatar" class="image" height="64" width="64" title="TypeScript">
+                </a>                 
+                <a class="image">
+                  <img src="images/icons/latex.png" alt="Avatar" class="image" height="64" width="64" title="Latex">
+                </a>
+                <a class="image">
+                  <img src="images/icons/ruby.png" alt="Avatar" class="image" height="64" width="64" title="Ruby">
+                </a>
+              </div>
+            <br>
+
+            <h4>Conocimiento medio de otras herramientas:</h4>
+              <div class="container">
+                <a class="image">
+                  <img src="images/icons/unity.png" alt="Avatar" class="image" height="64" width="64" title="Unity">
+                </a>
+                <a class="image">
+                  <img src="images/icons/android.png" alt="Avatar" class="image" height="64" width="64" title="Android Studio">
+                </a>
+                <a class="image">
+                  <img src="images/icons/tex.png" alt="Avatar" class="image" height="64" width="64" title="TexMaker">
+                </a> 
+                <a class="image">
+                  <img src="images/icons/ionic.png" alt="Avatar" class="image" height="64" width="64" title="Ionic">
+                </a>    
+              </div>
+            <br/>
+            <br>
 
             <h3>Conocimientos Generales</h3>
-            <h5>Experiencia con metodología de SCRUM</h5>
+            <h5>Experiencia con metodología de SCRUM y Kanban</h5>
             <h5>Inglés 95%</h5>
+            <br>
+
+            <h3>Experiencia Laboral</h3>
+            <h5>1 año en la empresa "Debuxit" como técnico en redes</h5>
+            <h5>4 meses en la empresa "CM Techlab" como desarrollador de Software</h5>
           </header>
         </article>
 
@@ -116,7 +210,8 @@
               de "Desarrollo de Aplicaciones Web"
             </p>
             <ul class="actions special">
-              <li><a href="https://github.com/hprobertos/MeteoRun" class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/MeteoRun" target="_blank" class="button">Ver en GitHub</a></li>
+              <li><a href="#"  class="button">Ver en Vivo</a></li>
             </ul>
           </article>
 
@@ -130,11 +225,11 @@
               ><img src="images/pic2.jpg" alt=""
             /></a>
             <p>
-              Realizado con Unity y Vuforia. <br />Para la clase de "Diseño de
+              Realizado con Unity y Vuforia. <br/>Para la clase de "Diseño de
               Interacciones"
             </p>
             <ul class="actions special">
-              <li><a class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/UnityGame" class="button" target="_blank">Ver en GitHub</a></li>
             </ul>
           </article>
 
@@ -152,7 +247,7 @@
               Orientada a Objetos"
             </p>
             <ul class="actions special">
-              <li><a class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/TalesOfAlkonost" target="_blank" class="button">Ver en GitHub</a></li>
             </ul>
           </article>
 
@@ -170,7 +265,7 @@
               Para la clase de "Base de Datos"
             </p>
             <ul class="actions special">
-              <li><a href="https://github.com/hprobertos/DB_Project" class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/DB_Project" target="_blank" class="button">Ver en GitHub</a></li>
             </ul>
           </article>
           <article>
@@ -187,7 +282,7 @@
               Para la clase de "Ingeniería de Software"
             </p>
             <ul class="actions special">
-              <li><a href="https://github.com/hprobertos/HBConcept" class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/HBConcept" target="_blank" class="button">Ver en GitHub</a></li>
             </ul>
           </article>
 
@@ -205,7 +300,7 @@
               Para la clase de "Desarrollo de Apps Móviles."
             </p>
             <ul class="actions special">
-              <li><a href="https://github.com/hprobertos/RecommenDish" class="button">Ver en GitHub</a></li>
+              <li><a href="https://github.com/hprobertos/RecommenDish" target="_blank" class="button">Ver en GitHub</a></li>
             </ul>
           </article>
 
@@ -223,7 +318,7 @@
               Para la clase de "Análisis y Diseño de Sistemas."
             </p>
             <ul class="actions special">
-              <li><a href="#" class="button">Ver en GitHub</a></li>
+              <li><a href="#" class="button" disabled>Ver en GitHub</a></li>
             </ul>
           </article>
 
@@ -334,3 +429,15 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
+<script type="text/javascript">
+  function changeLang(){
+    if(localStorage.getItem("lang") == "esp"){
+      localStorage.setItem('lang',"eng");
+    }    
+    else
+      localStorage.setItem('lang',"esp");
+
+    document.location.reload(true);
+}
+</script>
