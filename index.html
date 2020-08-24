@@ -1,15 +1,16 @@
 <!--
-  Portafolio
-  Fecha de creación: 5/May/2019
-  Fecha de modificación: 1/Ene/2020
+  Portfolio
+  Creation date: 05/May/2019
+  Last time modified: 23/Agu/2020
 
-  Template utilizado para este portafolio: 
+  Template used to make this portfolio: 
   html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <!DOCTYPE html>
 <script type="text/javascript">
-  // Put this at the top of index page
+  // Put this at the top of index page to change languages (Eventually I hope)
+  // The default language is english at the moment
     var language = "esp";
     if (localStorage.getItem("lang") == "eng") {
       language = "eng";
@@ -33,7 +34,7 @@
       <!-- Intro -->
       <div id="intro">
         <h1>
-          Portafolio
+          Portfolio
         </h1>
         <p></p>
         <ul class="actions">
@@ -96,53 +97,51 @@
 
             <h4>College:</h4>
             <h5>Computer Engineering, UABC, Tijuana</h5>
+            <h5>Graduated in December 2019</h5>
             <br/>
 
             <h3>Programming Knowledge</h3>
-            <h4>Experience in the languages:</h4>
+            <h4>Experience with the programming languages:</h4>
 
             <div class="container">
-              <a class="image">
-                <img src="images/icons/c.png" alt="Avatar" class="image" height="64" width="64" title="C">
-              </a>
               <a class="image">
                 <img src="images/icons/java.png" alt="Avatar" class="image" height="64" width="64" title="Java">
               </a>
               <a class="image">
+                <img src="images/icons/ts.png" alt="Avatar" class="image" height="64" width="64" title="TypeScript">
+              </a> 
+              <a class="image">
                 <img src="images/icons/js.png" alt="Avatar" class="image" height="64" width="64" title="Javascript">
               </a>
               <a class="image">
-                <img src="images/icons/php.png" alt="Avatar" class="image" height="64" width="64" title="PHP">
+                <img src="images/icons/c.png" alt="Avatar" class="image" height="64" width="64" title="C">
               </a> 
               <a class="image">
-                <img src="images/icons/python.png" alt="Avatar" class="image" height="64" width="64" title="Python">
-              </a>              
-              
-              
-
+                <img src="images/icons/php.png" alt="Avatar" class="image" height="64" width="64" title="PHP">
+              </a>               
             </div>
             <br>
 
             <h4>Experience with the tools:</h4>
               <div class="container">
                 <a class="image">
-                  <img src="images/icons/mysql.png" alt="Avatar" class="image" height="64" width="64" title="MySQL">
-                </a>    
-                <a class="image">
-                  <img src="images/icons/st.png" alt="Avatar" class="image" height="64" width="64" title="SourceTree">
-                </a>                 
-                <a class="image">
                   <img src="images/icons/angular.png" alt="Avatar" class="image" height="64" width="64" title="Angular">
                 </a> 
                 <a class="image">
-                  <img src="images/icons/fire.png" alt="Avatar" class="image" height="64" width="64" title="Firestore">
+                  <img src="images/icons/git.png" alt="Avatar" class="image" height="64" width="64" title="Git">
+                </a>
+                <a class="image">
+                  <img src="images/icons/maven.png" alt="Avatar" class="image" height="64" width="64" title="Maven">
                 </a>  
+                <a class="image">
+                  <img src="images/icons/aws.png" alt="Avatar" class="image" height="64" width="64" title="Maven">
+                </a>        
                 <a class="image">
                   <img src="images/icons/codeig.png" alt="Avatar" class="image" height="64" width="64" title="CodeIgniter">
-                </a>  
+                </a>            
                 <a class="image">
-                  <img src="images/icons/bs.png" alt="Avatar" class="image" height="64" width="64" title="Bootstrap">
-                </a>
+                  <img src="images/icons/fire.png" alt="Avatar" class="image" height="64" width="64" title="Firestore">
+                </a>  
               </div>
             <br>
 
@@ -153,9 +152,6 @@
                 </a>  
                 <a class="image">
                   <img src="images/icons/csharp.png" alt="Avatar" class="image" height="64" width="64" title="C#">
-                </a>  
-                <a class="image">
-                  <img src="images/icons/ts.png" alt="Avatar" class="image" height="64" width="64" title="TypeScript">
                 </a>                 
                 <a class="image">
                   <img src="images/icons/latex.png" alt="Avatar" class="image" height="64" width="64" title="Latex">
@@ -163,11 +159,17 @@
                 <a class="image">
                   <img src="images/icons/ruby.png" alt="Avatar" class="image" height="64" width="64" title="Ruby">
                 </a>
+                <a class="image">
+                  <img src="images/icons/python.png" alt="Avatar" class="image" height="64" width="64" title="Python">
+                </a>
               </div>
             <br>
 
             <h4>Other tools:</h4>
               <div class="container">
+                <a class="image">
+                  <img src="images/icons/mysql.png" alt="Avatar" class="image" height="64" width="64" title="MySQL">
+                </a>   
                 <a class="image">
                   <img src="images/icons/unity.png" alt="Avatar" class="image" height="64" width="64" title="Unity">
                 </a>
@@ -183,20 +185,35 @@
               </div>
             <br/>
             <br>
-
-            <h3>General Knowledge</h3>
-            <h5>Experience with the agile methodology SCRUM and Kanban</h5>
-            <h5>Experience with the use of requirements and logs</h5>
-            <h5>English 95% in lecture, writing, comprehension and dialogue</h5>
-            <br>
+            
+            <div class="container">
+              <h3>General Knowledge</h3>
+              <h5>Experience with the agile methodology SCRUM and Kanban</h5>
+              <h5>Experience with the use of requirements and logs</h5>
+              <h5>Experience with architecture design (DDD)</h5>
+              <h5>Experience with testing:</h5>
+              <h5>TDD</h5>
+              <h5>Unit testing</h5>
+              <h5>End-to-End testing</h5>
+              <h5>Component testing</h5>
+              <h5>Integration testing</h5>
+              <h5>English 95% in lecture, writing, comprehension and dialogue</h5>
+              <br>
+            </div>
 
             <h3>Work Experience</h3>
             <h5>Helped in a company in the Network area, 1 year</h5>
             <h5>Software Developer in CM Tech Lab, 4 months</h5>
+            <br>
+
+            <h3>Currently working</h3>
+            <h5>Software Engineer I in Thermofisher Scientific, 7 months</h5>
+            <br>
           </header>
         </article>
 
         <!-- Posts -->
+        <h1 style="text-align: center;">Projects</h1>
         <section class="posts">
           <article>
             <header>
@@ -207,7 +224,7 @@
             <a class="image fit"
               ><img src="images/pic1.jpg" alt=""/></a>
             <p>
-              Made in Javascript.
+              Made with Vanilla Javascript.
             </p>
             <ul class="actions special">
               <li><a href="https://github.com/hprobertos/MeteoRun" target="_blank" class="button">View on GitHub</a></li>
@@ -225,7 +242,7 @@
               ><img src="images/pic2.jpg" alt=""
             /></a>
             <p>
-              Made with Unity and Vuforia.
+              Made with Unity and Vuforia (C#).
             </p>
             <ul class="actions special">
               <li><a href="https://github.com/hprobertos/UnityGame" class="button" target="_blank">View in GitHub</a></li>
@@ -259,7 +276,7 @@
               ><img src="images/pic4.jpg" alt=""
             /></a>
             <p>
-              Made in HTML, CSS, PHP and MySQL.
+              Made with HTML, CSS, PHP and MySQL.
             </p>
             <ul class="actions special">
               <li><a href="https://github.com/hprobertos/DB_Project" target="_blank" class="button">Viewn on GitHub</a></li>
@@ -275,7 +292,7 @@
               ><img src="images/pic5.jpg" alt=""
             /></a>
             <p>
-              Made in HTML, CSS and JavaScript.
+              Made with HTML, CSS and JavaScript, using frameworks.
             </p>
             <ul class="actions special">
               <li><a href="https://github.com/hprobertos/HBConcept" target="_blank" class="button">View on GitHub</a></li>
@@ -309,7 +326,7 @@
               ><img src="images/pic7.png" alt=""
             /></a>
             <p>
-              Made in Android Studio and Firebase.
+              Made in Android Studio using Firebase.
             </p>
             <ul class="actions special">
               <li><a href="#" class="button" disabled>View on GitHub</a></li>
@@ -325,7 +342,7 @@
             <a class="image fit"
               ><img src="images/pic02.jpg" alt=""/></a>
             <p>
-              Made Visual Basic 2017 and SQL Server.
+              Made in Visual Basic 2017 using SQL Server.
             </p>
             <ul class="actions special">
               <li><a href="https://github.com/hprobertos/InventoryProject" class="button">View on GitHub</a></li>
@@ -336,10 +353,12 @@
         <!-- Footer -->
         <footer>
           <div class="pagination">
-            <!--<a href="#" class="previous">Prev</a>-->
-            <!-- <a href="#" class="page active">1</a> -->
+            <a href="#" class="previous">Prev</a>
+            <a href="#" class="page active">1</a>
           </div>
         </footer>
+
+          <h2 style="text-align: center;">Contact Me</h2>
       </div>
 
       <!-- Footer -->
