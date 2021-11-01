@@ -1,5 +1,5 @@
 window.onload = function() {
-    document.getElementById("workTime").innerHTML = getWorkExperience("2 February 2020");
+    document.getElementById("workTime").innerHTML = getWorkExperience("1 November 2021");
     document.getElementById("totalWorkTime").innerHTML = getWorkExperience("30 August 2019");
   };
 
