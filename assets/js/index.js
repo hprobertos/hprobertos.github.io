@@ -1,25 +1,20 @@
 window.onload = function() {
-    document.getElementById("workTime").innerHTML = getWorkExperience("1 November 2021");
-    document.getElementById("totalWorkTime").innerHTML = getWorkExperience("30 August 2019");
+    document.getElementById("workTime").innerHTML = getWorkExperience("2021-11-01");
+    document.getElementById("totalWorkTime").innerHTML = getWorkExperience("2019-08-30");
   };
 
   function getWorkExperience(date) {
     var today = new Date();
     var joinedDate = new Date(date);
-    var ynew = today.getFullYear();
-    var mnew = today.getMonth();
-    var dnew = today.getDate();
-    var yold = joinedDate.getFullYear();
-    var mold = joinedDate.getMonth();
-    var dold = joinedDate.getDate();
-    var years = ynew - yold;
-    var months = mnew - mold; 
-    if (mold > mnew) years--;
-    else {
-        if (mold == mnew) {
-            if (dold > dnew) years--;
-        }
-    }
-    var yearText = years > 1 ? "years" : "year";
-    return `Time Worked: ${years} ${yearText}, ${months} months`;
+    const numberOfDays = Math.ceil(Math.abs(today - joinedDate) / (1000 * 60 * 60 * 24));
+
+    var years = Math.floor(numberOfDays / 365);
+    var months = Math.floor(numberOfDays % 365 / 30);
+    var days = Math.floor(numberOfDays % 365 % 30);
+
+    var yearsDisplay = years > 0 ? years + (years == 1 ? " year, " : " years, ") : "";
+    var monthsDisplay = months > 0 ? months + (months == 1 ? " month, " : " months, ") : "";
+    var daysDisplay = days > 0 ? days + (days == 1 ? " day" : " days") : "";
+
+    return `Time Worked: ${yearsDisplay} ${monthsDisplay} ${daysDisplay}`;
   }
